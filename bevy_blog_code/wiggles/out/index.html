@@ -25,6 +25,18 @@
   </style>
 </head>
 <body>
+  <script>
+    // Bevy/winit calls canvas.focus() once the app is ready, with no
+    // preventScroll option, which makes the browser scroll it (and the
+    // parent page embedding this iframe) into view. Force preventScroll
+    // on every focus() call in this document so that never happens.
+    (function () {
+      var originalFocus = HTMLElement.prototype.focus;
+      HTMLElement.prototype.focus = function (options) {
+        return originalFocus.call(this, Object.assign({}, options, { preventScroll: true }));
+      };
+    })();
+  </script>
   <script type="module">
     import init from './wiggles.js';
     init();

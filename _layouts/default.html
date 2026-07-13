@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <script>
+      // Chrome/etc. restore the last scroll position on reload by default,
+      // which makes the page jump straight back to wherever you'd scrolled
+      // to before (e.g. the demo) instead of starting at the top.
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+    </script>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

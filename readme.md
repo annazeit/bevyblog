@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Anna's Blog"
 permalink: /
 ---
