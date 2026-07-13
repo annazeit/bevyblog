@@ -30,8 +30,20 @@ pub struct SpritePlugin;
 impl Plugin for SpritePlugin {
     fn build (&self, app: &mut App) {
         app.add_systems(Startup, sprite_start);
-        app.add_systems(Update, sprite_movement);
+        app.add_systems(Update, (sprite_movement, camera_follow).chain());
     }
+}
+
+// Keeps the camera centered on the worm: its position orbits the origin
+// over time, so a fixed camera would let it drift off-screen.
+fn camera_follow(
+    sprite_query: Query<&Sprite>,
+    mut camera_query: Query<&mut Transform, With<Camera2d>>,
+) {
+    let sprite = sprite_query.single();
+    let mut camera_transform = camera_query.single_mut();
+    camera_transform.translation.x = sprite.position.x;
+    camera_transform.translation.y = sprite.position.y;
 }
 
 #[derive(Component)]

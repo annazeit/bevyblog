@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Anna's Blog"
+permalink: /
+---
+
 # [Welcome to My Blog!](https://annazeit.github.io/blog/)
 
 
@@ -14,35 +20,35 @@ My page is filled with articles and simple examples that are easy to follow. I t
 
 ### Setup 
 
-- [Setting up with Rust and Bevy](./Archive/2024/12/2024.12.GettingStarted.md)
+- [Setting up with Rust and Bevy](./Archive/2024/12/2024.12.GettingStarted.html)
 
 ### Starting Game Development on Rust
 
-- [Setting Up the Camera](./Archive/2024/12/2024.12.SettingUpTheCamera.md)
+- [Setting Up the Camera](./Archive/2024/12/2024.12.SettingUpTheCamera.html)
 
-- [Drawing using Gizmos](./Archive/2024/12/2024.12.DrawingUsingGizmos.md)
+- [Drawing using Gizmos](./Archive/2024/12/2024.12.DrawingUsingGizmos.html)
 
-- [Creating a Player and Adding Simple Controls](./Archive/2024/12/2024.12.PlayerControls.md)
+- [Creating a Player and Adding Simple Controls](./Archive/2024/12/2024.12.PlayerControls.html)
 
-- [Collisions](./Archive/2025/02/2025.02.Collisions.md)
+- [Collisions](./Archive/2025/02/2025.02.Collisions.html)
 
-- [3D Camera and Objects](./Archive/2025/05/2025.05.3DCameraAndObjects.md)
+- [3D Camera and Objects](./Archive/2025/05/2025.05.3DCameraAndObjects.html)
 
-- [Split-screen](./Archive/2025/06/2025.06.SplitScreen.md)
+- [Split-screen](./Archive/2025/06/2025.06.SplitScreen.html)
 
-- [Audio](./Archive/2025/04/2025.04.Audio.md)
+- [Audio](./Archive/2025/04/2025.04.Audio.html)
 
-- [Importing Blender Models](./Archive/2025/07/2025.07.ImportingBlenderModel.md)
+- [Importing Blender Models](./Archive/2025/07/2025.07.ImportingBlenderModel.html)
 
-- [Connecting Bevy and WASM](./Archive/2025/08/2025.08.BevyInWASM.md)
+- [Connecting Bevy and WASM](./Archive/2025/08/2025.08.BevyInWASM.html)
 
 ### Rust's Module System
 
-- [Crates and Modules](./Archive/2025/02/2025.02.RustCratesAndModules.md)
+- [Crates and Modules](./Archive/2025/02/2025.02.RustCratesAndModules.html)
 
 ### Bevy's Entity Component System (ECS)
 
-- [Entity Component System](./Archive/2025/04/2025.04.WhatIsECS.md)
+- [Entity Component System](./Archive/2025/04/2025.04.WhatIsECS.html)
 
 ## Bevy Bevy Bevy
 
@@ -50,4 +56,4 @@ My page is filled with articles and simple examples that are easy to follow. I t
 
 ## Try Demo
 
-<iframe src="bevy_blog_code/wiggles/out/index.html" width="960" height="540" frameborder="0" style="border:2px solid #ccc; box-shadow:0 0 20px rgba(0,0,0,0.5); background:black;"></iframe>
+<iframe src="bevy_blog_code/wiggles/out/index.html" frameborder="0" style="width:100%; max-width:960px; aspect-ratio:16/9; background:black; display:block;"></iframe>
