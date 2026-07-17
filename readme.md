@@ -1,9 +1,9 @@
 ---
-title: "Anna's Blog"
+title: "Anna's Bevy Blog"
 permalink: /
 ---
 
-# [Welcome to My Blog!](https://annazeit.github.io/bevyblog/)
+# [Welcome to My Bevy Blog!](https://annazeit.github.io/bevyblog/)
 
 
 Hello! I'm Anna, and this is my corner of the internet where I share insights on Rust and the Bevy game engine.
